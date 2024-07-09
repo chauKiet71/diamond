@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 data-aos="zoom-in">test</h1>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+<script>
+    // Lấy danh sách tất cả các phần tử có class là "x6s0dn4"
+    const divElements = document.querySelectorAll('.x6s0dn4 .x1lq5wgf .xgqcy7u .x30kzoy .x9jhf4c .x1olyfxc .x9f619 .x78zum5 .x1e56ztr .xyamay9 .x1pi30zi .x1l90r2v .x1swvt13 .x1gefphp');
+
+    let count = 0;
+
+    // Duyệt qua từng phần tử div
+    divElements.forEach(function (divElement) {
+        // Kiểm tra xem có phần tử con nào không chứa chữ "bạn chung" hay không
+        const containsYouHaveFriends = Array.from(divElement.querySelectorAll('a')).some(a => {
+            return a.textContent.includes('bạn chung');
+        });
+
+        // Nếu không có phần tử con nào chứa chữ "bạn chung", tăng biến đếm lên
+        if (!containsYouHaveFriends) {
+            count++;
+        }
+    });
+
+    console.log(`Số lượng div không chứa chữ 'bạn chung': ${count}`);
+
+</script>
