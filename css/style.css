@@ -659,7 +659,7 @@ nav {
 }
 
 .newsletter {
-padding: 80px;
+    padding: 80px;
 }
 
 .newsletter .sale {
@@ -681,83 +681,333 @@ padding: 80px;
 .newsletter .box-email {
     position: relative;
 }
-.newsletter .box-email input{
+
+.newsletter .box-email input {
     border: none;
     padding: 10px;
     outline: none;
     width: 360px;
 }
-.newsletter .box-email button{
+
+.newsletter .box-email button {
     border: none;
     width: 134px;
-    padding: 10px ;
+    padding: 10px;
     background-color: #f55f1e;
     position: absolute;
     font-weight: 500;
     color: #f4f4f4;
 }
-.payment{
+
+.payment {
     padding: 30px 0px;
 }
-.payment p{
+
+.payment p {
     width: 50%;
     margin: 0;
     display: flex;
     align-items: center;
 }
+
 .payment .payment-img {
     width: 50%;
 }
-.payment .payment-img img{
+
+.payment .payment-img img {
     width: 80%;
 }
-.icon-sdt{
+
+.icon-sdt {
     width: 20%;
 }
-.icon-sdt i{
+
+.icon-sdt i {
     font-size: 40px;
     color: #978d94;
 }
+
 .content-sdt {
     width: 80%;
 }
-.content-sdt p{
+
+.content-sdt p {
     margin-bottom: 5px;
 }
-.content-sdt h4{
+
+.content-sdt h4 {
     font-weight: 700;
     font-size: 25px;
 }
+
 .edit-img {
     text-align: center;
 }
-.icon-contact{
+
+.icon-contact {
     display: flex;
     align-items: center;
     justify-content: right;
 }
-.icon-contact i{
+
+.icon-contact i {
     margin-left: 10px;
-    display: inline-block; /* Cho phép áp dụng padding và border */
-    background-color: #f0f0f0; /* Màu nền của icon */
-    padding: 10px; /* Khoảng cách giữa icon và viền */
-    border-radius: 50%; /* Bo tròn viền */
-    color: #f55f1e; /* Màu của icon */
-    text-align: center; /* Canh giữa icon trong khối */
-    font-size: 14px; /* Kích thước icon */
-    width: 40px; /* Chiều rộng của khối bao quanh icon */
-    height: 40px; /* Chiều cao của khối bao quanh icon */
-    line-height: 20px; /* Điều chỉnh dòng của icon để canh giữa theo chiều dọc */
+    display: inline-block;
+    /* Cho phép áp dụng padding và border */
+    background-color: #f0f0f0;
+    /* Màu nền của icon */
+    padding: 10px;
+    /* Khoảng cách giữa icon và viền */
+    border-radius: 50%;
+    /* Bo tròn viền */
+    color: #f55f1e;
+    /* Màu của icon */
+    text-align: center;
+    /* Canh giữa icon trong khối */
+    font-size: 14px;
+    /* Kích thước icon */
+    width: 40px;
+    /* Chiều rộng của khối bao quanh icon */
+    height: 40px;
+    /* Chiều cao của khối bao quanh icon */
+    line-height: 20px;
+    /* Điều chỉnh dòng của icon để canh giữa theo chiều dọc */
 }
-.icon-contact i:hover{
+
+.icon-contact i:hover {
     background-color: #f55f1e;
     color: white;
     transition: .3s;
 }
-.edit-footer p{
+
+.edit-footer p {
     font-size: 15px;
 }
-.edit-footer .name{
+
+.edit-footer .name {
     font-size: 20px;
     font-weight: 500;
+}
+
+/* --------------------------san pham------------------------------------ */
+.bg-banner-sp {
+    background-image: url(../image/breadcrumb-shop.jpg);
+    background-repeat: no-repeat;
+}
+
+.content-center {
+    padding: 10% 0px;
+}
+
+.content-center a {
+    text-decoration: none;
+    color: #6e7070;
+}
+
+.content-center a:hover {
+    color: #f16c32;
+    transition: .3s;
+}
+
+.title-filter {
+    display: flex;
+    align-items: center;
+}
+
+.title-filter .box-left {
+    width: 50%;
+    float: left;
+}
+
+.title-filter .box-left p {
+    margin: 0;
+}
+
+.title-filter .box-right {
+    width: 50%;
+    background-color: transparent;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.title-filter .box-right p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.title-filter .box-right select {
+    margin-right: 10px;
+}
+
+.title-filter .box-right a {
+    font-size: 20px;
+}
+
+.banner-shop img {
+    width: 100%;
+}
+
+.img-product img {
+    width: 100%;
+}
+
+/* top-feed-back */
+.top-feed-back {
+    display: flex;
+    justify-content: start;
+}
+
+.feed-back-stars i {
+    font-size: 15px;
+    color: #f4d225;
+}
+
+/* button quantity */
+.quantity {
+    display: inline-flex;
+    align-items: center;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.quantity input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border: none;
+    outline: none;
+}
+
+.quantity {
+    border: 1px solid rgb(160, 156, 156);
+    padding: 5px 10px;
+}
+
+.shop-now {
+    display: flex;
+    justify-content: center;
+}
+
+.product-description ul {
+    display: block;
+}
+
+.custom-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    /* Khoảng cách để hiển thị dấu chấm */
+}
+
+.custom-list li::before {
+    content: '•';
+    /* Dấu chấm */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    /* Màu của dấu chấm */
+}
+
+.shop-now {
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.add-cart {
+    margin: 0px 20px;
+    border: none;
+    background-color: #181818;
+    color: white;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.add-cart:hover {
+    background-color: #f16c32;
+    transition: .3s;
+}
+
+.buy-now {
+    border: none;
+    background-color: #f16c32;
+    color: white;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.favourite {
+    text-decoration: none;
+    color: #6B6B6B;
+    margin-top: 20px !important;
+}
+
+.favourite:hover {
+    color: #f16c32;
+    transition: .3s;
+}
+
+.product_meta a {
+    text-decoration: none;
+    color: #383958;
+}
+
+.product_meta a:hover {
+    color: #f16c32;
+    transition: .3s;
+}
+
+.contents{
+    background-color: #f16c32;
+    color: white;
+}
+
+.contents .col-4 {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.contents p {
+    font-size: 13px;
+    margin: 0;
+}
+.contents span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.quanlity {
+    border: 1px solid #f16c32;
+    border-radius: 5px;
+}
+.quanlity-service{
+    position: absolute;
+    bottom: 130px;
+    left: 50%; /* Di chuyển tới giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch chuyển ngược lại 50% chiều ngang của chính nó */
+    background-color: #f16c32;
+    padding: 3px 10px;
+    color: white;
+    border-radius: 5px;
 }
